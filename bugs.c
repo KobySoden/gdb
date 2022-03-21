@@ -103,6 +103,8 @@ int main(int argc, char** argv) {
   bug_info.sentence[3] = strdup("bug");
   bug_info.sentence[4] = strdup("is");
   bug_info.sentence[5] = strdup("a");
+  bug_info.sentence[6] = NULL;
+
   //FIXME: It may be necessary to add onto this structure.
 
   // Print the current bug population on various planets
@@ -144,6 +146,7 @@ int main(int argc, char** argv) {
   free(bug_info.sentence[3]);
   free(bug_info.sentence[4]);
   free(bug_info.sentence[5]);
+  free(bug_info.sentence[6]);
 
   // Prints "The current bug adjective is: (null)"
   printf("The current bug adjective is: %s\n", bug_info.sentence[2]);
